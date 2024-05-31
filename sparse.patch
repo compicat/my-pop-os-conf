@@ -1,0 +1,18 @@
+---
+ drivers/platform/x86/Kconfig | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/drivers/platform/x86/Kconfig b/drivers/platform/x86/Kconfig
+index 0ec952b5d03e..1953317541ea 100644
+--- a/drivers/platform/x86/Kconfig
++++ b/drivers/platform/x86/Kconfig
+@@ -515,6 +515,7 @@ config THINKPAD_ACPI
+ 	select NVRAM
+ 	select NEW_LEDS
+ 	select LEDS_CLASS
++	select INPUT_SPARSEKMAP
+ 	help
+ 	  This is a driver for the IBM and Lenovo ThinkPad laptops. It adds
+ 	  support for Fn-Fx key combinations, Bluetooth control, video
+-- 
+2.43.0
